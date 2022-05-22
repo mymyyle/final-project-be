@@ -11,7 +11,7 @@ const createApplication = require("./createApplication");
 require("dotenv").config();
 const cors = require("cors");
 const mongoose = require("mongoose");
-const mongoURI = process.env.MONGO_DEV_URI;
+const mongoURI = process.env.MONGO_PROD_URI;
 
 const app = express();
 app.use(logger("dev"));
@@ -25,9 +25,6 @@ mongoose
   .connect(mongoURI)
   .then(() => {
     console.log(`DB connected`);
-    // createUser(200);
-    // createJob(1);
-    // createApplication(5);
   })
   .catch((err) => console.log(err));
 
