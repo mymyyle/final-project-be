@@ -2,7 +2,7 @@
   "name": "final-project-be",
   "version": "1.0.0",
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./bin/www",
     "client": "cd client && npm start",
     "server": "nodemon ./bin/www"
   },
