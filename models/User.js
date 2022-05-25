@@ -10,6 +10,13 @@ const userSchema = Schema(
     avatarUrl: { type: String },
     aboutMe: { type: String },
     isDeleted: { type: Boolean, default: false, select: false },
+
+    employerRatingId: { type: Array },
+    totalEmployerScore: { type: Number, default: 0 },
+
+    employeeRatingId: { type: Array },
+    totalEmployeeScore: { type: Number, default: 0 },
+    allStart: { type: Number, default: 0 },
   },
   {
     timestamps: true,

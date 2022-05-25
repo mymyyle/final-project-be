@@ -24,6 +24,8 @@ const applicationSchema = Schema(
       default: "pending",
       enum: ["pending", "approved", "rejected"],
     },
+    isEmployerRated: { type: Boolean, default: false },
+    isEmployeeRated: { type: Boolean, default: false },
   },
   { timestamps: true }
 );

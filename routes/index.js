@@ -13,4 +13,7 @@ router.use("/comment", commentRouter);
 const applicationRouter = require("./application.api");
 router.use("/application", applicationRouter);
 
+const ratingRouter = require("./rating.api");
+router.use("/rating", ratingRouter);
+
 module.exports = router;
