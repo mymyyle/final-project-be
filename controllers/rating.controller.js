@@ -1,6 +1,6 @@
 const ratingController = {};
 const { sendResponse, catchAsync, throwError } = require("../helpers/utils");
-const Rating = require("../models/rating");
+const Rating = require("../models/Rating");
 const Job = require("../models/Job");
 const User = require("../models/User");
 const Application = require("../models/Application");
