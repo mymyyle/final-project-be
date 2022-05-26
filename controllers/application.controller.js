@@ -4,6 +4,7 @@ const Application = require("../models/Application");
 const Job = require("../models/Job");
 const User = require("../models/User");
 
+// comment
 // 1. user can apply = job id(author k dc, ktra có tạo schema cho jobId chưa)
 applicationController.applyJob = catchAsync(async (req, res, next) => {
   const { message = "" } = req.body;
